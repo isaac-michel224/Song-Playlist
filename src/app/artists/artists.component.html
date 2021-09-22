@@ -1,0 +1,25 @@
+<h2>Artists</h2>
+<ul class="artists">
+    <li *ngFor="let artist of artists" (click)="onSelect(artist)">
+        <span class="badge">{{artist.id}}</span>
+        {{artist.name}} |
+        <i>{{artist.song}}</i>
+    </li>
+</ul>
+
+
+<div *ngIf="selectedArtist">
+
+
+    <h2>{{selectedArtist.name}} Details</h2>
+<div><span>id: </span>{{selectedArtist.id}}</div>
+
+
+<div>
+    <label>
+        Change Song:
+        <input [(ngModel)]="selectedArtist.song" placeholder="song"/>
+    </label>
+    </div>
+</div>
+
