@@ -1,6 +1,26 @@
-/* Resources:
+a {
+    text-decoration: none;
+}
 
-https://techtalentsouth.slides.com/techtalentsouth/angular-project-part-i-lab?token=IXyGgR-D#/2
-https://techtalentsouth.slides.com/techtalentsouth/angular-part-i?token=N2aYD_7V
+nav a {
+    padding: 5px 10px;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 5px;
+    display: inline-block;
+    background-color: #eee;
+    border-radius: 4px;
+}
 
-https://angular.io/tutorial/toh-pt1 */
+nav a:visited, a:link {
+    color: #334953;
+}
+
+nav a:hover {
+    color: #039be5;
+    background-color: #cfc8dc;
+}
+
+nav a.active {
+    color: #039be5;
+}
